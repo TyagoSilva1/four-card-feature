@@ -1,11 +1,11 @@
-/* RESET */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* CORES */
+
 :root {
     --cyan: hsl(180, 62%, 55%);
     --red: hsl(0, 78%, 62%);
@@ -16,7 +16,7 @@
     --light: hsl(0, 0%, 98%);
 }
 
-/* BODY */
+
 body {
     font-family: 'Poppins', sans-serif;
     background: var(--light);
@@ -25,13 +25,13 @@ body {
     padding: 40px 20px;
 }
 
-/* CONTAINER */
+
 .container {
     max-width: 1100px;
     text-align: center;
 }
 
-/* HEADER */
+
 .header h2 {
     font-weight: 200;
     color: var(--gray);
@@ -48,7 +48,7 @@ body {
     margin-bottom: 50px;
 }
 
-/* GRID DOS CARDS */
+
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -56,7 +56,7 @@ body {
     align-items: center;
 }
 
-/* CARD BASE */
+
 .card {
     background: white;
     padding: 25px;
@@ -66,7 +66,7 @@ body {
     position: relative;
 }
 
-/* LINHA COLORIDA NO TOPO */
+
 .card::before {
     content: "";
     position: absolute;
@@ -77,13 +77,12 @@ body {
     border-radius: 8px 8px 0 0;
 }
 
-/* CORES DE CADA CARD */
 .supervisor::before { background: var(--cyan); }
 .team::before { background: var(--red); }
 .karma::before { background: var(--orange); }
 .calculator::before { background: var(--blue); }
 
-/* TEXTO */
+
 .card h3 {
     color: var(--dark);
     margin-bottom: 10px;
@@ -94,7 +93,7 @@ body {
     font-size: 14px;
 }
 
-/* POSIÇÃO ESPECIAL (igual ao layout) */
+
 .supervisor {
     grid-column: 1;
 }
@@ -111,7 +110,7 @@ body {
     grid-column: 3;
 }
 
-/* RESPONSIVO */
+
 @media (max-width: 900px) {
     .cards {
         grid-template-columns: 1fr;
